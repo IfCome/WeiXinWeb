@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\API\DefaultController.cs" />
     <Compile Include="Controllers\UI\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -217,9 +218,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\API\" />
     <Folder Include="Models\" />
     <Folder Include="Resource\" />
+    <Folder Include="Views\Default\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeiXin.Framework.Utilities\WeiXin.Framework.Utilities.csproj">
+      <Project>{aaa11e1b-621b-40fe-9e2d-ee253f85ee81}</Project>
+      <Name>WeiXin.Framework.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeiXin.Framework.WeiXinUtilities\WeiXin.Framework.WeiXinUtilities.csproj">
+      <Project>{7bc9540d-2b50-4e70-9a2b-d381b249708f}</Project>
+      <Name>WeiXin.Framework.WeiXinUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

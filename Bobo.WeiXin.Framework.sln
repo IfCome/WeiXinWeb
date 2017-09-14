@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Web", "WeiXin.Framework.Web\WeiXin.Framework.Web.csproj", "{C495D656-6267-4106-8E8F-2B00A6F08D0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.WeiXinUtilities", "WeiXin.Framework.WeiXinUtilities\WeiXin.Framework.WeiXinUtilities.csproj", "{7BC9540D-2B50-4E70-9A2B-D381B249708F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Utilities", "WeiXin.Framework.Utilities\WeiXin.Framework.Utilities.csproj", "{AAA11E1B-621B-40FE-9E2D-EE253F85EE81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Test", "WeiXin.Framework.Test\WeiXin.Framework.Test.csproj", "{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{C495D656-6267-4106-8E8F-2B00A6F08D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C495D656-6267-4106-8E8F-2B00A6F08D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C495D656-6267-4106-8E8F-2B00A6F08D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC9540D-2B50-4E70-9A2B-D381B249708F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC9540D-2B50-4E70-9A2B-D381B249708F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC9540D-2B50-4E70-9A2B-D381B249708F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC9540D-2B50-4E70-9A2B-D381B249708F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA11E1B-621B-40FE-9E2D-EE253F85EE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA11E1B-621B-40FE-9E2D-EE253F85EE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA11E1B-621B-40FE-9E2D-EE253F85EE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA11E1B-621B-40FE-9E2D-EE253F85EE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
