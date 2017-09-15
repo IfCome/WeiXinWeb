@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Utilities"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Test", "WeiXin.Framework.Test\WeiXin.Framework.Test.csproj", "{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin.Framework.Model", "WeiXin.Framework.Model\WeiXin.Framework.Model.csproj", "{80D0EAA8-86D0-4507-B5C4-C735FC27C334}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36CC2FB4-2D47-4C9C-AC26-1AF8524BEDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D0EAA8-86D0-4507-B5C4-C735FC27C334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D0EAA8-86D0-4507-B5C4-C735FC27C334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D0EAA8-86D0-4507-B5C4-C735FC27C334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D0EAA8-86D0-4507-B5C4-C735FC27C334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

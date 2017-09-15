@@ -1,4 +1,6 @@
-﻿using WeiXin.Framework.Utilities;
+﻿using System.Web;
+using WeiXin.Framework.Model;
+using WeiXin.Framework.Utilities;
 
 namespace WeiXin.Framework.WeiXinUtilities
 {
@@ -6,11 +8,16 @@ namespace WeiXin.Framework.WeiXinUtilities
     {
         public static string GetNewAccessToken()
         {
-            string res = HttpRequestHelper.PostOrGet("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxa77a673c1cdce2c1&secret=c506a69e809ece9fdbdbbdb0d821ec92");
+            // 先从本地读取
+
+            // 再从接口获取
+            string res = HttpRequestHelper.PostOrGet("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8400b7574c25093a&secret=2cde02c90d42310ebbd6c530b97a6743");
             if (!string.IsNullOrEmpty(res))
             {
-                //{"access_token":"LyuyuWj4T132LrhI8_3edyYYKmKXuVPqpdy5FXOV24TewNA9QmI_VwlnnAYUiup3XSohejXn24_6bgepwFpAQe3vjap8tSsvFS9dEHkAoS4SPAQ78oSyzrkwSg1f7x8iLJKaAAASQR","expires_in":7200}
-                return res;
+                FileHelper.AppendText(HttpContext.Current.Server.MapPath("~/GetNewAccessToken.txt"), res);
+                WeiXinAccessToken token = JsonEntityExchange<WeiXinAccessToken>.ConvertJsonToEntity(res);
+
+                return token.access_token;
             }
             return null;
         }

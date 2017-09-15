@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeiXin.Framework.Model\WeiXin.Framework.Model.csproj">
+      <Project>{80D0EAA8-86D0-4507-B5C4-C735FC27C334}</Project>
+      <Name>WeiXin.Framework.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeiXin.Framework.Utilities\WeiXin.Framework.Utilities.csproj">
       <Project>{aaa11e1b-621b-40fe-9e2d-ee253f85ee81}</Project>
       <Name>WeiXin.Framework.Utilities</Name>

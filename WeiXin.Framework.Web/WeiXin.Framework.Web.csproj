@@ -192,7 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\API\DefaultController.cs" />
+    <Compile Include="Controllers\API\WeiXinAccessController.cs" />
     <Compile Include="Controllers\UI\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -223,6 +223,10 @@
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeiXin.Framework.Model\WeiXin.Framework.Model.csproj">
+      <Project>{80d0eaa8-86d0-4507-b5c4-c735fc27c334}</Project>
+      <Name>WeiXin.Framework.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeiXin.Framework.Utilities\WeiXin.Framework.Utilities.csproj">
       <Project>{aaa11e1b-621b-40fe-9e2d-ee253f85ee81}</Project>
       <Name>WeiXin.Framework.Utilities</Name>

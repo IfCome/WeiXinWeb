@@ -12,12 +12,9 @@ namespace WeiXin.Framework.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            
+            routes.MapRoute(name: "web", url: "web/{controller}/{action}.do",namespaces: new[] { "WeiXin.Framework.Web.Controllers.UI" });
+            routes.MapRoute(name: "api", url: "api/{controller}/{action}.api", namespaces: new[] { "WeiXin.Framework.Web.Controllers.API" });
         }
     }
 }
